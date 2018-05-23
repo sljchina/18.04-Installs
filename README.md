@@ -4,14 +4,14 @@
 
 ### Recommended Order
 
-`sudo ./ Essentials.sh`
+`sudo ./Essentials.sh`
 
-`sudo ./ CUDA.sh`
+`sudo ./CUDA.sh`
 
-`sudo ./ Docker.sh`
+`sudo ./Docker.sh`
 
-`sudo ./ pips.sh`
+`sudo ./pips.sh`
 
-`sudo ./ ROS.sh`
+`sudo ./ROS.sh`
 
-`sudo ./ OpenAI.sh`
+`sudo ./OpenAI.sh`
