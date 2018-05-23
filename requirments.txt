@@ -17,22 +17,23 @@ Pillow
 pydot
 six
 
-
 # ML
 h5py
 skimage
 opencv
 dask[complete]
 
-
-# Deep Learning
+# Deep Learning Frameworks
 tensorflow-gpu
 keras
 scikit-learn
 http://download.pytorch.org/whl/cu90/torch-0.4.0-cp36-cp36m-linux_x86_64.whl 
 torchvision
 
-
+# Enviorments
+opengl
+pybullet
+gym[all]
 
 
 
