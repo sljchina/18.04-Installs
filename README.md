@@ -1,6 +1,6 @@
 # 18.04-Installs
 
-## Bash Scripts To Ease The Transistion With A Fresh Install Of Ubuntu 18.04
+## Bash Scripts To Ease The Transition With A Fresh Install Of Ubuntu 18.04
 
 ### Recommended Order
 
