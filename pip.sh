@@ -5,4 +5,4 @@ sudo apt-get update && apt-get install -y \
   python3-pip
 
 # Install Packages
-pip3 install -e -r /requirements.txt --upgrade
+pip3 install -r /requirements.txt --upgrade
