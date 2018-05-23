@@ -13,6 +13,19 @@ git clone https://github.com/openai/roboschool.git
 
 ROBOSCHOOL_PATH=~/Documents/RL/roboschool
 
+## RoboSchool ##
+sudo apt-get update && apt-get install -y \
+    zlib1g-dev \
+    libjpeg-dev \
+    xvfb \
+    libav-tools \
+    xorg-dev \
+    python-opengl \
+    libboost-all-dev \
+    libsdl2-dev swig 
+
+cd $ROBOSCHOOL_PATH
+
 git clone https://github.com/olegklimov/bullet3 -b roboschool_self_collision
 mkdir bullet3/build
 cd    bullet3/build
