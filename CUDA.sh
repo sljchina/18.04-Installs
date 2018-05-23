@@ -14,7 +14,7 @@ echo -e \
 read
 
 # Install wget
-sudo apt-get update && install -y \
+sudo apt-get update && apt-get install -y \
     wget
    
 # Download Cuda-9.0
