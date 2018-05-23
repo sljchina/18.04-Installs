@@ -41,11 +41,18 @@ sudo apt-get install -y --no-install-recommends \
     libcudnn7-dev=$CUDNN_VERSION-1+cuda9.0
  
 # Install CUPTI (CUDA® Profiling Tools Interface)
-sudo apt-get install libcupti-dev
+sudo apt-get install cuda-command-line-tools
 
 # Environment setup
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64
+
+# Install NVIDIA TensorRT 3.0 (optimized inferencing performance)
+wget https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1404/x86_64/nvinfer-runtime-trt-repo-ubuntu1404-3.0.4-ga-cuda9.0_1.0-1_amd64.deb
+sudo dpkg -i nvinfer-runtime-trt-repo-ubuntu1404-3.0.4-ga-cuda9.0_1.0-1_amd64.deb
+sudo apt-get update && apt-get install -y \
+    libnvinfer-dev
 
 # Install TensorFlow with GPU support
 pip3 install --upgrade tensorflow-gpu
